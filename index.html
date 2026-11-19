@@ -307,6 +307,10 @@
       border-left: 3px solid var(--blue);
     }
 
+    .service + .service {
+      margin-top: 24px;
+    }
+
     .service p {
       margin: 4px 0;
       color: var(--muted);
@@ -685,6 +689,10 @@
 
         <p>Machine Learning for Signal Processing track</p>
       </div>
+
+      <div class="service">
+        <h3>Reviewer · IEEE TPS 2026</h3>
+      </div>
     </section>
 
     <section id="education">
@@ -725,14 +733,14 @@
 
   <script>
     const bibtex = document.getElementById("bibtex");
-    const status = document.getElementById("copy-status");
+    const copyStatus = document.getElementById("copy-status");
 
     document.getElementById("copy-bib").addEventListener(
       "click",
       async () => {
         try {
           await navigator.clipboard.writeText(bibtex.textContent);
-          status.textContent = "Copied!";
+          copyStatus.textContent = "Copied!";
         } catch {
           const range = document.createRange();
           range.selectNodeContents(bibtex);
@@ -741,7 +749,7 @@
           selection.removeAllRanges();
           selection.addRange(range);
 
-          status.textContent =
+          copyStatus.textContent =
             "Text selected. Press Ctrl+C (Mac: ⌘C) to copy.";
         }
       }
