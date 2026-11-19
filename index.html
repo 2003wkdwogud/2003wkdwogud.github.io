@@ -8,7 +8,7 @@
 
   <meta
     name="description"
-    content="Jaehyeong Chang is an Electrical Engineering undergraduate at the University at Buffalo, with research interests in speech processing, audio forensics, and multimedia security."
+    content="Jaehyeong Chang is an Electrical Engineering undergraduate and audio researcher at the University at Buffalo, working on speech deepfake detection, audio provenance, and robust speech processing."
   >
 
   <style>
@@ -57,7 +57,7 @@
     }
 
     .nav-inner {
-      max-width: 1080px;
+      max-width: 1100px;
       margin: auto;
       padding: 17px 28px;
       display: flex;
@@ -75,7 +75,7 @@
     .nav-links {
       display: flex;
       flex-wrap: wrap;
-      gap: 22px;
+      gap: 20px;
       font-size: 14px;
     }
 
@@ -85,13 +85,13 @@
     }
 
     main {
-      max-width: 1080px;
+      max-width: 1100px;
       margin: auto;
       padding: 0 28px;
     }
 
     .hero {
-      padding: 70px 0 62px;
+      padding: 65px 0 55px;
       display: grid;
       grid-template-columns: minmax(0, 1fr) 220px;
       gap: 55px;
@@ -114,13 +114,13 @@
     }
 
     h2 {
-      margin: 0 0 25px;
+      margin: 0 0 22px;
       font-size: 27px;
       line-height: 1.3;
     }
 
     h3 {
-      margin: 0 0 5px;
+      margin: 0 0 7px;
       font-size: 18px;
       line-height: 1.5;
     }
@@ -131,6 +131,11 @@
       color: var(--muted);
       font-size: 18px;
       line-height: 1.7;
+    }
+
+    .role {
+      color: var(--muted);
+      font-size: 14px;
     }
 
     .portrait {
@@ -174,7 +179,7 @@
       border-top: 1px solid var(--line);
     }
 
-    .about { max-width: 850px; }
+    .about { max-width: 900px; }
 
     .tags {
       display: flex;
@@ -188,6 +193,13 @@
       background: #edf4fc;
       border-radius: 4px;
       font-size: 12px;
+    }
+
+    .section-intro {
+      max-width: 850px;
+      margin: -5px 0 25px;
+      color: var(--muted);
+      font-size: 15px;
     }
 
     .publication {
@@ -250,6 +262,56 @@
       font-size: 13px;
     }
 
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .project {
+      padding: 25px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+    }
+
+    .project.featured {
+      grid-column: 1 / -1;
+      background: var(--wash);
+    }
+
+    .project p,
+    .project li {
+      font-size: 14px;
+    }
+
+    .project p {
+      color: var(--muted);
+    }
+
+    .project ul {
+      padding-left: 19px;
+      margin: 12px 0 0;
+    }
+
+    .project li + li {
+      margin-top: 7px;
+    }
+
+    .project-date {
+      margin-bottom: 10px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .result {
+      margin-top: 18px;
+      padding-top: 14px;
+      border-top: 1px solid var(--line);
+      color: var(--blue);
+      font-size: 14px;
+      font-weight: 700;
+    }
+
     .entry {
       display: grid;
       grid-template-columns: 160px minmax(0, 1fr);
@@ -272,19 +334,20 @@
       font-size: 14px;
     }
 
-    .projects {
+    .mentoring {
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 18px;
     }
 
-    .project {
+    .mentoring article {
       padding: 22px;
+      background: var(--wash);
       border: 1px solid var(--line);
       border-radius: 8px;
     }
 
-    .project p {
+    .mentoring p {
       margin-bottom: 0;
       color: var(--muted);
       font-size: 14px;
@@ -311,7 +374,7 @@
       font-size: 12px;
     }
 
-    @media (max-width: 720px) {
+    @media (max-width: 760px) {
       .nav-inner {
         padding: 13px 20px;
         flex-wrap: wrap;
@@ -319,7 +382,7 @@
       }
 
       .nav-links {
-        gap: 15px;
+        gap: 14px;
         font-size: 12px;
       }
 
@@ -344,8 +407,15 @@
         gap: 3px;
       }
 
-      .projects { grid-template-columns: 1fr; }
-      .publication { padding: 20px; }
+      .projects,
+      .mentoring {
+        grid-template-columns: 1fr;
+      }
+
+      .publication,
+      .project {
+        padding: 20px;
+      }
     }
 
     @media (prefers-reduced-motion: reduce) {
@@ -362,6 +432,7 @@
       <div class="nav-links">
         <a href="#about">About</a>
         <a href="#publications">Publications</a>
+        <a href="#research">Research</a>
         <a href="#experience">Experience</a>
         <a href="#service">Service</a>
       </div>
@@ -381,6 +452,13 @@
           Exploring speech and the authenticity of sound.<br>
           Speech Processing, Audio Forensics
           &amp; Multimedia Security
+        </p>
+
+        <p class="role">
+          Audio Team Technical Leader ·
+          Undergraduate Research Assistant<br>
+          Institute for Artificial Intelligence and Data Science /
+          Media Forensics Lab
         </p>
 
         <div class="links">
@@ -423,22 +501,30 @@
       <div class="about">
         <p>
           I am an Electrical Engineering undergraduate at the
-          University at Buffalo and an undergraduate research intern
-          in the Media Forensics Lab (MDFL), advised by Professor
-          Siwei Lyu. I also serve as Audio Team Technical Leader
-          for the Institute for Artificial Intelligence and Data
-          Science (IAD) and MDFL.
+          University at Buffalo and an undergraduate research
+          assistant in the Media Forensics Lab (MDFL), working
+          under Professor Siwei Lyu and Chengzhe Sun. I also
+          serve as Audio Team Technical Leader for the
+          Institute for Artificial Intelligence and Data Science
+          (IAD) and MDFL.
         </p>
 
         <p>
-          My research interests lie in speech processing,
-          audio forensics, and multimedia security. In speech
-          processing, I am interested in automatic speech
-          recognition and child speech normalization. In audio
-          forensics, I investigate acoustic cues that distinguish
-          AI-generated sounds from real recordings, including
-          impulsive sound analysis and speech deepfake detection
-          across neural audio codecs.
+          My research asks how we can determine whether audio
+          is authentic, localize manipulated segments, and
+          reconstruct how a recording has been processed.
+          I develop detection and sequence modeling methods
+          and study their robustness across datasets,
+          generators, and neural audio codecs.
+        </p>
+
+        <p>
+          Alongside my own research, I coordinate experiments
+          and mentor graduate and undergraduate researchers
+          working on biomedical audio analysis, accessible
+          speech technology, and robust audio watermarking.
+          My work includes experiment design, PyTorch-based
+          audio pipelines, and model evaluation.
         </p>
       </div>
 
@@ -474,8 +560,8 @@
 
         <p>
           Investigating decay-region group delay as an
-          interpretable cue for identifying AI-generated
-          impulsive sounds.
+          interpretable forensic cue for distinguishing
+          AI-generated impulsive sounds from real recordings.
         </p>
 
         <div class="pub-links">
@@ -514,6 +600,227 @@
       </article>
     </section>
 
+    <section id="research">
+      <h2>Selected Research</h2>
+
+      <p class="section-intro">
+        Research on audio authenticity, processing provenance,
+        and generalization under distribution shift.
+      </p>
+
+      <div class="projects">
+        <article class="project featured">
+          <span class="badge">Cross-Codec Generalization</span>
+
+          <h3>Cross-Codec Speech Deepfake Generalization</h3>
+
+          <div class="project-date">2026 – Present</div>
+
+          <p>
+            Studying how detector training on one neural
+            audio codec transfers to other codecs, and how
+            those transfer relationships can guide training
+            data selection.
+          </p>
+
+          <ul>
+            <li>
+              Constructed a <strong>15 × 15 cross-codec
+              benchmark</strong> spanning 15 neural codecs
+              and <strong>210 directed transfer pairs</strong>.
+            </li>
+            <li>
+              Evaluated codec-level explanations for
+              generalization and quantified pair-specific
+              transfer behavior.
+            </li>
+            <li>
+              Developed a <strong>transfer-aware codec subset
+              selection strategy</strong> and validated selected
+              subsets through detector retraining.
+            </li>
+          </ul>
+
+          <div class="result">
+            15 neural codecs · 210 directed transfer pairs ·
+            Transfer-aware training data selection
+          </div>
+        </article>
+
+        <article class="project">
+          <span class="badge">Detection &amp; Localization</span>
+
+          <h3>Partial Deepfake Localization under Distribution Shift</h3>
+
+          <div class="project-date">2026 – Present</div>
+
+          <p>
+            Investigating whether detectors can identify and
+            temporally localize manipulated speech when
+            evaluated beyond their training distribution.
+          </p>
+
+          <ul>
+            <li>
+              Conduct cross-dataset evaluation across
+              <strong>PartialSpoof, Half-Truth, and
+              LlamaPartialSpoof</strong>.
+            </li>
+            <li>
+              Analyze source-dependent transfer failure,
+              generator-specific behavior, and differences
+              in manipulation structure.
+            </li>
+            <li>
+              Evaluate multi-source training and augmentation
+              strategies for out-of-domain robustness.
+            </li>
+          </ul>
+        </article>
+
+        <article class="project">
+          <span class="badge">Audio Provenance</span>
+
+          <h3>Single-Recording Audio Provenance Reconstruction</h3>
+
+          <div class="project-date">2026 – Present</div>
+
+          <p>
+            Reconstructing a recording’s ordered processing
+            history from a single recording without a
+            reference signal.
+          </p>
+
+          <ul>
+            <li>
+              Formulated processing-history reconstruction
+              as a <strong>sequence-decoding problem</strong>.
+            </li>
+            <li>
+              Combined frozen self-supervised speech
+              encoders with an autoregressive Transformer
+              decoder.
+            </li>
+            <li>
+              Outperformed matched flat and independent
+              prediction baselines.
+            </li>
+          </ul>
+
+          <div class="result">
+            68.3% exact-chain accuracy in the evaluated setting
+          </div>
+        </article>
+
+        <article class="project">
+          <span class="badge">Interpretable Sound Forensics</span>
+
+          <h3>AI-Generated Explosion Sound Forensics</h3>
+
+          <div class="project-date">Apr 2026 – Present</div>
+
+          <p>
+            Investigating phase information and decay-region
+            group delay as interpretable cues for detecting
+            AI-generated explosion sounds.
+          </p>
+
+          <ul>
+            <li>
+              Developed phase- and group-delay-based
+              audio analysis pipelines.
+            </li>
+            <li>
+              Conduct statistical comparisons between
+              real and synthetic recordings.
+            </li>
+          </ul>
+        </article>
+
+        <article class="project">
+          <span class="badge">Impulsive Sound Detection</span>
+
+          <h3>AI vs. Real Gunshot Sound Detection</h3>
+
+          <div class="project-date">Nov 2025 – Present</div>
+
+          <p>
+            Developing detectors that distinguish real
+            gunshot recordings from AI-generated gunshot sounds.
+          </p>
+
+          <ul>
+            <li>
+              Developed a dual-expert
+              <strong>WavLM + AASIST-lite</strong> detector.
+            </li>
+            <li>
+              Built preprocessing and evaluation pipelines
+              for impulsive-sound classification and
+              synthetic-audio detection.
+            </li>
+          </ul>
+
+          <div class="result">
+            99.02% accuracy in the evaluated setting
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="mentoring">
+      <h2>Research Leadership &amp; Mentoring</h2>
+
+      <p class="section-intro">
+        Team research directions that I help guide through
+        experiment planning, model evaluation, and mentoring.
+      </p>
+
+      <div class="mentoring">
+        <article>
+          <span class="badge">Biomedical Audio</span>
+
+          <h3>Cardio-Respiratory Audio Analysis</h3>
+
+          <div class="project-date">2026 – Present</div>
+
+          <p>
+            Guide graduate researchers developing hierarchical
+            and multitask models for disease-related analysis
+            of heart, breath, and cough sounds.
+          </p>
+        </article>
+
+        <article>
+          <span class="badge">Accessible Speech Technology</span>
+
+          <h3>Children’s Speech Normalization</h3>
+
+          <div class="project-date">2026 – Present</div>
+
+          <p>
+            Guide research on speech recognition and
+            normalization for children with developmental
+            disabilities.
+          </p>
+        </article>
+
+        <article>
+          <span class="badge">Audio Watermarking</span>
+
+          <h3>Robust Audio Watermarking</h3>
+
+          <div class="project-date">2026 – Present</div>
+
+          <p>
+            Guide graduate researchers investigating watermark
+            recovery under compression, trimming, resampling,
+            and voice cloning.
+          </p>
+        </article>
+      </div>
+    </section>
+
     <section id="experience">
       <h2>Experience</h2>
 
@@ -524,14 +831,21 @@
           <h3>Audio Team Technical Leader</h3>
 
           <div class="org">
-            IAD &amp; UB Media Forensics Lab ·
+            IAD / Media Forensics Lab · University at Buffalo<br>
             The Research Foundation for SUNY
           </div>
 
           <p>
-            Lead the audio research team working on audio
-            deepfake detection and related speech research
-            at the University at Buffalo.
+            Lead and coordinate research across speech
+            deepfake detection, audio forensics, biomedical
+            audio analysis, accessible speech technology,
+            and audio watermarking.
+          </p>
+
+          <p>
+            Design experiments, build PyTorch-based audio
+            pipelines, evaluate models, and mentor graduate
+            and undergraduate researchers.
           </p>
         </div>
       </div>
@@ -540,15 +854,16 @@
         <div class="date">Nov 2025 – Present</div>
 
         <div>
-          <h3>Undergraduate Research Intern</h3>
+          <h3>Undergraduate Research Assistant</h3>
 
           <div class="org">
             Media Forensics Lab · University at Buffalo
           </div>
 
           <p>
-            Conduct research on audio deepfake detection
-            and multimedia forensics under Professor Siwei Lyu.
+            Conduct audio forensics and speech deepfake
+            detection research under Professor Siwei Lyu
+            and Chengzhe Sun.
           </p>
         </div>
       </div>
@@ -575,18 +890,24 @@
         <div class="date">Jun 2024 – Aug 2024</div>
 
         <div>
-          <h3>Undergraduate Research Intern · HIL</h3>
+          <h3>Undergraduate Research Intern</h3>
 
           <div class="org">
-            Seoul National University · Seoul, South Korea
+            Human Interface Lab (HIL) · Seoul National University<br>
+            Seoul, South Korea
           </div>
 
           <p>
             Conducted experiments in speech recognition,
             speech synthesis, and speaker identification.
-            Implemented and analyzed the Listen, Attend
-            and Spell architecture and processed audio
-            datasets for sequence-to-sequence speech modeling.
+          </p>
+
+          <p>
+            Analyzed and implemented
+            <strong>Listen, Attend and Spell (LAS)</strong>
+            for end-to-end speech modeling, and processed
+            audio datasets for sequence-to-sequence experiments
+            and model robustness evaluation.
           </p>
         </div>
       </div>
@@ -595,59 +916,26 @@
         <div class="date">Dec 2023 – Jan 2024</div>
 
         <div>
-          <h3>Undergraduate Research Intern · HY-BPNE</h3>
+          <h3>Undergraduate Research Intern</h3>
 
           <div class="org">
-            Hanyang University · Seoul, South Korea
+            HY-BPNE Lab · Hanyang University<br>
+            Seoul, South Korea
           </div>
 
           <p>
-            Developed Bluetooth communication and IMU-based
-            motion tracking for wearable rehabilitation devices,
-            with work on sensor processing and hardware–software
-            integration.
+            Developed <strong>Bluetooth-based communication
+            systems</strong> for wearable rehabilitation devices.
+          </p>
+
+          <p>
+            Implemented <strong>IMU-based motion tracking</strong>
+            and processed sensor data for real-time movement
+            analysis and classification. Collaborated on
+            hardware–software integration for healthcare
+            applications.
           </p>
         </div>
-      </div>
-    </section>
-
-    <section id="research">
-      <h2>Research Projects</h2>
-
-      <div class="projects">
-        <article class="project">
-          <span class="badge">Audio Forensics</span>
-
-          <h3>AI-Generated Gunshot Detection</h3>
-
-          <p>
-            Distinguishing real gunshot recordings from
-            synthetic sounds across multiple audio generators.
-          </p>
-        </article>
-
-        <article class="project">
-          <span class="badge">Audio Forensics</span>
-
-          <h3>Cross-Codec Deepfake Detection</h3>
-
-          <p>
-            Exploring transfer-aware training data selection
-            for generalization to unseen neural audio codecs.
-          </p>
-        </article>
-
-        <article class="project">
-          <span class="badge">Speech Processing</span>
-
-          <h3>Speech &amp; Voice Research</h3>
-
-          <p>
-            Coordinating team projects in child speech
-            normalization for automatic speech recognition
-            and cloned-versus-real speech detection.
-          </p>
-        </article>
       </div>
     </section>
 
