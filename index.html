@@ -4,11 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Jaehyeong Chang | Speech Recognition, Audio &amp; Multimedia Forensics</title>
+  <title>Jaehyeong Chang | Speech Processing, Audio Forensics &amp; Multimedia Security</title>
 
   <meta
     name="description"
-    content="Jaehyeong Chang is an Electrical Engineering undergraduate at the University at Buffalo. His interests include speech recognition, audio deepfake detection, and multimedia forensics."
+    content="Jaehyeong Chang is an Electrical Engineering undergraduate at the University at Buffalo, with research interests in speech processing, audio forensics, and multimedia security."
   >
 
   <style>
@@ -20,9 +20,7 @@
       --wash: #f4f7fa;
     }
 
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
     html {
       scroll-behavior: smooth;
@@ -41,9 +39,7 @@
       text-underline-offset: 4px;
     }
 
-    a:hover {
-      color: #003d80;
-    }
+    a:hover { color: #003d80; }
 
     a:focus-visible,
     button:focus-visible,
@@ -97,7 +93,7 @@
     .hero {
       padding: 70px 0 62px;
       display: grid;
-      grid-template-columns: 1fr 220px;
+      grid-template-columns: minmax(0, 1fr) 220px;
       gap: 55px;
       align-items: center;
     }
@@ -129,9 +125,7 @@
       line-height: 1.5;
     }
 
-    p {
-      margin: 10px 0 16px;
-    }
+    p { margin: 10px 0 16px; }
 
     .lead {
       color: var(--muted);
@@ -180,9 +174,7 @@
       border-top: 1px solid var(--line);
     }
 
-    .about {
-      max-width: 850px;
-    }
+    .about { max-width: 850px; }
 
     .tags {
       display: flex;
@@ -260,14 +252,12 @@
 
     .entry {
       display: grid;
-      grid-template-columns: 160px 1fr;
+      grid-template-columns: 160px minmax(0, 1fr);
       gap: 24px;
       margin-bottom: 30px;
     }
 
-    .entry:last-child {
-      margin-bottom: 0;
-    }
+    .entry:last-child { margin-bottom: 0; }
 
     .date {
       padding-top: 3px;
@@ -275,9 +265,7 @@
       font-size: 13px;
     }
 
-    .org {
-      margin: 3px 0 7px;
-    }
+    .org { margin: 3px 0 7px; }
 
     .entry p {
       margin: 6px 0;
@@ -286,7 +274,7 @@
 
     .projects {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 18px;
     }
 
@@ -307,9 +295,7 @@
       border-left: 3px solid var(--blue);
     }
 
-    .service + .service {
-      margin-top: 24px;
-    }
+    .service + .service { margin-top: 24px; }
 
     .service p {
       margin: 4px 0;
@@ -337,9 +323,7 @@
         font-size: 12px;
       }
 
-      main {
-        padding: 0 20px;
-      }
+      main { padding: 0 20px; }
 
       .hero {
         grid-template-columns: 1fr;
@@ -353,28 +337,19 @@
         height: 175px;
       }
 
-      h1 {
-        letter-spacing: -1px;
-      }
+      h1 { letter-spacing: -1px; }
 
       .entry {
         grid-template-columns: 1fr;
         gap: 3px;
       }
 
-      .projects {
-        grid-template-columns: 1fr;
-      }
-
-      .publication {
-        padding: 20px;
-      }
+      .projects { grid-template-columns: 1fr; }
+      .publication { padding: 20px; }
     }
 
     @media (prefers-reduced-motion: reduce) {
-      html {
-        scroll-behavior: auto;
-      }
+      html { scroll-behavior: auto; }
     }
   </style>
 </head>
@@ -404,8 +379,8 @@
 
         <p class="lead">
           Exploring speech and the authenticity of sound.<br>
-          Speech recognition, audio deepfake detection
-          &amp; multimedia forensics.
+          Speech Processing, Audio Forensics
+          &amp; Multimedia Security
         </p>
 
         <div class="links">
@@ -456,21 +431,21 @@
         </p>
 
         <p>
-          My research interests include speech recognition,
-          speech processing, audio deepfake detection, and
-          multimedia forensics. I investigate acoustic cues
-          that distinguish AI-generated sounds from real
-          recordings, with work spanning impulsive sound
-          forensics and generalization across neural audio codecs.
+          My research interests lie in speech processing,
+          audio forensics, and multimedia security. In speech
+          processing, I am interested in automatic speech
+          recognition and child speech normalization. In audio
+          forensics, I investigate acoustic cues that distinguish
+          AI-generated sounds from real recordings, including
+          impulsive sound analysis and speech deepfake detection
+          across neural audio codecs.
         </p>
       </div>
 
       <div class="tags">
-        <span class="tag">Speech recognition</span>
-        <span class="tag">Speech processing</span>
-        <span class="tag">Audio deepfake detection</span>
-        <span class="tag">Multimedia forensics</span>
-        <span class="tag">Machine learning</span>
+        <span class="tag">Speech Processing</span>
+        <span class="tag">Audio Forensics</span>
+        <span class="tag">Multimedia Security</span>
       </div>
     </section>
 
@@ -641,7 +616,7 @@
 
       <div class="projects">
         <article class="project">
-          <span class="badge">Sound forensics</span>
+          <span class="badge">Audio Forensics</span>
 
           <h3>AI-Generated Gunshot Detection</h3>
 
@@ -652,7 +627,7 @@
         </article>
 
         <article class="project">
-          <span class="badge">Speech authenticity</span>
+          <span class="badge">Audio Forensics</span>
 
           <h3>Cross-Codec Deepfake Detection</h3>
 
@@ -663,7 +638,7 @@
         </article>
 
         <article class="project">
-          <span class="badge">Speech recognition</span>
+          <span class="badge">Speech Processing</span>
 
           <h3>Speech &amp; Voice Research</h3>
 
