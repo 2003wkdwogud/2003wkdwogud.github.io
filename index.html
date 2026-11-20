@@ -96,7 +96,7 @@
 
     html {
       scroll-behavior: smooth;
-      scroll-padding-top: 100px;
+      scroll-padding-top: 110px;
     }
 
     body {
@@ -394,7 +394,7 @@
       display: grid;
       grid-template-columns: 160px minmax(0, 1fr);
       gap: 24px;
-      margin-bottom: 30px;
+      margin-bottom: 34px;
     }
 
     .entry:last-child {
@@ -414,6 +414,32 @@
     .entry p {
       margin: 6px 0;
       font-size: 14px;
+    }
+
+    .lab-heading {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 14px;
+    }
+
+    .lab-heading > div {
+      min-width: 0;
+    }
+
+    .school-logo {
+      width: 60px;
+      height: 60px;
+      flex-shrink: 0;
+      object-fit: contain;
+    }
+
+    .lab-heading h3 {
+      margin: 0;
+    }
+
+    .lab-heading .org {
+      margin: 4px 0 0;
     }
 
     .mentoring {
@@ -448,6 +474,10 @@
       margin: 4px 0;
       color: var(--muted);
       font-size: 14px;
+    }
+
+    #contact a {
+      overflow-wrap: anywhere;
     }
 
     footer {
@@ -492,7 +522,7 @@
 
       .entry {
         grid-template-columns: 1fr;
-        gap: 3px;
+        gap: 10px;
       }
 
       .projects,
@@ -503,6 +533,15 @@
       .publication,
       .project {
         padding: 20px;
+      }
+
+      .school-logo {
+        width: 48px;
+        height: 48px;
+      }
+
+      .lab-heading {
+        gap: 12px;
       }
     }
 
@@ -918,11 +957,24 @@
         <div class="date">May 2026 – Present</div>
 
         <div>
-          <h3>Audio Team Technical Leader</h3>
+          <div class="lab-heading">
+            <img
+              class="school-logo"
+              src="https://www.buffalo.edu/content/www/brand/identity/university-logo-and-marks/_jcr_content/root/maincontent/par/colctrl_0/column1/image_13.img.292.auto.jpg/1763653043298.jpg"
+              alt="University at Buffalo logo"
+              width="60"
+              height="60"
+              loading="lazy"
+            >
 
-          <div class="org">
-            IAD / Media Forensics Lab · University at Buffalo<br>
-            The Research Foundation for SUNY
+            <div>
+              <h3>Audio Team Technical Leader</h3>
+
+              <div class="org">
+                IAD / Media Forensics Lab · University at Buffalo<br>
+                The Research Foundation for SUNY
+              </div>
+            </div>
           </div>
 
           <p>
@@ -944,10 +996,23 @@
         <div class="date">Nov 2025 – Present</div>
 
         <div>
-          <h3>Undergraduate Research Assistant</h3>
+          <div class="lab-heading">
+            <img
+              class="school-logo"
+              src="https://www.buffalo.edu/content/www/brand/identity/university-logo-and-marks/_jcr_content/root/maincontent/par/colctrl_0/column1/image_13.img.292.auto.jpg/1763653043298.jpg"
+              alt="University at Buffalo logo"
+              width="60"
+              height="60"
+              loading="lazy"
+            >
 
-          <div class="org">
-            Media Forensics Lab · University at Buffalo
+            <div>
+              <h3>Undergraduate Research Assistant</h3>
+
+              <div class="org">
+                Media Forensics Lab · University at Buffalo
+              </div>
+            </div>
           </div>
 
           <p>
@@ -962,11 +1027,24 @@
         <div class="date">Feb 2026 – May 2026</div>
 
         <div>
-          <h3>Undergraduate Student Assistant</h3>
+          <div class="lab-heading">
+            <img
+              class="school-logo"
+              src="https://www.buffalo.edu/content/www/brand/identity/university-logo-and-marks/_jcr_content/root/maincontent/par/colctrl_0/column1/image_13.img.292.auto.jpg/1763653043298.jpg"
+              alt="University at Buffalo logo"
+              width="60"
+              height="60"
+              loading="lazy"
+            >
 
-          <div class="org">
-            Institute for Artificial Intelligence and Data Science ·
-            University at Buffalo
+            <div>
+              <h3>Undergraduate Student Assistant</h3>
+
+              <div class="org">
+                Institute for Artificial Intelligence and
+                Data Science · University at Buffalo
+              </div>
+            </div>
           </div>
 
           <p>
@@ -980,11 +1058,24 @@
         <div class="date">Jun 2024 – Aug 2024</div>
 
         <div>
-          <h3>Undergraduate Research Intern</h3>
+          <div class="lab-heading">
+            <img
+              class="school-logo"
+              src="https://en.snu.ac.kr/webdata/uploads/eng/image/2020/02/about-symbol-bi_lg.png"
+              alt="Seoul National University logo"
+              width="60"
+              height="60"
+              loading="lazy"
+            >
 
-          <div class="org">
-            Human Interface Lab (HIL) · Seoul National University<br>
-            Seoul, South Korea
+            <div>
+              <h3>Undergraduate Research Intern</h3>
+
+              <div class="org">
+                Human Interface Lab (HIL) · Seoul National University<br>
+                Seoul, South Korea
+              </div>
+            </div>
           </div>
 
           <p>
@@ -1006,11 +1097,24 @@
         <div class="date">Dec 2023 – Jan 2024</div>
 
         <div>
-          <h3>Undergraduate Research Intern</h3>
+          <div class="lab-heading">
+            <img
+              class="school-logo"
+              src="https://www.hanyang.ac.kr/documents/10548136/0/img_hy0104_02_0101.png/ce3ec476-fd01-e5b3-d8c0-06ab0e3474c9?download=true&amp;t=1680574326154"
+              alt="Hanyang University logo"
+              width="60"
+              height="60"
+              loading="lazy"
+            >
 
-          <div class="org">
-            HY-BPNE Lab · Hanyang University<br>
-            Seoul, South Korea
+            <div>
+              <h3>Undergraduate Research Intern</h3>
+
+              <div class="org">
+                HY-BPNE Lab · Hanyang University<br>
+                Seoul, South Korea
+              </div>
+            </div>
           </div>
 
           <p>
@@ -1055,10 +1159,24 @@
         <div class="date">Expected May 2028</div>
 
         <div>
-          <h3>B.S. in Electrical Engineering</h3>
+          <div class="lab-heading">
+            <img
+              class="school-logo"
+              src="https://www.buffalo.edu/content/www/brand/identity/university-logo-and-marks/_jcr_content/root/maincontent/par/colctrl_0/column1/image_13.img.292.auto.jpg/1763653043298.jpg"
+              alt="University at Buffalo logo"
+              width="60"
+              height="60"
+              loading="lazy"
+            >
 
-          <div class="org">
-            University at Buffalo, The State University of New York
+            <div>
+              <h3>B.S. in Electrical Engineering</h3>
+
+              <div class="org">
+                University at Buffalo,
+                The State University of New York
+              </div>
+            </div>
           </div>
         </div>
       </div>
