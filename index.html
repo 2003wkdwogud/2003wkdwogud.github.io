@@ -8,8 +8,78 @@
 
   <meta
     name="description"
-    content="Jaehyeong Chang is an Electrical Engineering undergraduate and audio researcher at the University at Buffalo, working on speech deepfake detection, audio provenance, and robust speech processing."
+    content="Jaehyeong Chang is an Electrical Engineering undergraduate and audio researcher at the University at Buffalo, working on speech processing, audio forensics, and multimedia security."
   >
+
+  <link rel="canonical" href="https://2003wkdwogud.github.io/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Jaehyeong Chang">
+  <meta property="og:title" content="Jaehyeong Chang">
+  <meta
+    property="og:description"
+    content="Speech Processing, Audio Forensics &amp; Multimedia Security. Research at the University at Buffalo."
+  >
+  <meta property="og:url" content="https://2003wkdwogud.github.io/">
+  <meta
+    property="og:image"
+    content="https://2003wkdwogud.github.io/profile.jpg"
+  >
+  <meta property="og:image:alt" content="Portrait of Jaehyeong Chang">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Jaehyeong Chang">
+  <meta
+    name="twitter:description"
+    content="Speech Processing, Audio Forensics &amp; Multimedia Security."
+  >
+  <meta
+    name="twitter:image"
+    content="https://2003wkdwogud.github.io/profile.jpg"
+  >
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://2003wkdwogud.github.io/#website",
+        "name": "Jaehyeong Chang",
+        "alternateName": "Jaehyeong Chang — Research",
+        "url": "https://2003wkdwogud.github.io/",
+        "inLanguage": "en",
+        "publisher": {
+          "@id": "https://2003wkdwogud.github.io/#person"
+        }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://2003wkdwogud.github.io/#person",
+        "name": "Jaehyeong Chang",
+        "url": "https://2003wkdwogud.github.io/",
+        "image": "https://2003wkdwogud.github.io/profile.jpg",
+        "jobTitle": "Audio Team Technical Leader / Undergraduate Research Assistant",
+        "affiliation": {
+          "@type": "CollegeOrUniversity",
+          "name": "University at Buffalo"
+        },
+        "knowsAbout": [
+          "Speech Processing",
+          "Audio Forensics",
+          "Multimedia Security",
+          "Speech Recognition",
+          "Audio Deepfake Detection"
+        ],
+        "sameAs": [
+          "https://scholar.google.com/citations?user=1QKQlN8AAAAJ",
+          "https://www.linkedin.com/in/jaehyeong-chang-171116337/",
+          "https://github.com/2003wkdwogud"
+        ]
+      }
+    ]
+  }
+  </script>
 
   <style>
     :root {
@@ -20,7 +90,9 @@
       --wash: #f4f7fa;
     }
 
-    * { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
 
     html {
       scroll-behavior: smooth;
@@ -39,7 +111,9 @@
       text-underline-offset: 4px;
     }
 
-    a:hover { color: #003d80; }
+    a:hover {
+      color: #003d80;
+    }
 
     a:focus-visible,
     button:focus-visible,
@@ -125,7 +199,9 @@
       line-height: 1.5;
     }
 
-    p { margin: 10px 0 16px; }
+    p {
+      margin: 10px 0 16px;
+    }
 
     .lead {
       color: var(--muted);
@@ -179,7 +255,9 @@
       border-top: 1px solid var(--line);
     }
 
-    .about { max-width: 900px; }
+    .about {
+      max-width: 900px;
+    }
 
     .tags {
       display: flex;
@@ -319,7 +397,9 @@
       margin-bottom: 30px;
     }
 
-    .entry:last-child { margin-bottom: 0; }
+    .entry:last-child {
+      margin-bottom: 0;
+    }
 
     .date {
       padding-top: 3px;
@@ -327,7 +407,9 @@
       font-size: 13px;
     }
 
-    .org { margin: 3px 0 7px; }
+    .org {
+      margin: 3px 0 7px;
+    }
 
     .entry p {
       margin: 6px 0;
@@ -358,7 +440,9 @@
       border-left: 3px solid var(--blue);
     }
 
-    .service + .service { margin-top: 24px; }
+    .service + .service {
+      margin-top: 24px;
+    }
 
     .service p {
       margin: 4px 0;
@@ -386,7 +470,9 @@
         font-size: 12px;
       }
 
-      main { padding: 0 20px; }
+      main {
+        padding: 0 20px;
+      }
 
       .hero {
         grid-template-columns: 1fr;
@@ -400,7 +486,9 @@
         height: 175px;
       }
 
-      h1 { letter-spacing: -1px; }
+      h1 {
+        letter-spacing: -1px;
+      }
 
       .entry {
         grid-template-columns: 1fr;
@@ -419,7 +507,9 @@
     }
 
     @media (prefers-reduced-motion: reduce) {
-      html { scroll-behavior: auto; }
+      html {
+        scroll-behavior: auto;
+      }
     }
   </style>
 </head>
@@ -1009,8 +1099,11 @@
           range.selectNodeContents(bibtex);
 
           const selection = window.getSelection();
-          selection.removeAllRanges();
-          selection.addRange(range);
+
+          if (selection) {
+            selection.removeAllRanges();
+            selection.addRange(range);
+          }
 
           copyStatus.textContent =
             "Text selected. Press Ctrl+C (Mac: ⌘C) to copy.";
